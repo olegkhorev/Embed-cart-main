@@ -1,0 +1,24 @@
+.brands {	width: 100%;}
+.brands .brand {	float: left;	width: 205px;
+	height: 220px;
+	padding: 10px;
+	border: 1px solid #e2e2e2;
+	margin: 0 20px 20px 0;
+	text-align: center;
+	border-radius: 16px;
+}
+.brands .brand img {	margin: 0 auto 10px auto;
+	clear: both;
+	display: block;
+}.brand_page img {	float: left;	margin: 0 10px 10px 0;
+}
+.main-container.ec_brands-margin {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.ec_brand-products-count {
+	color: var(--theme-color);
+	text-align: center;
+	font-weight: 700;
+}

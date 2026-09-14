@@ -1,0 +1,83 @@
+Label,Перевод
+URL,URL
+SKU,Артикул
+Alt,Alt
+drop_files_to_upload,Перетащите сюда файлы для загрузки.
+foot_advertising,foot_advertising
+foot_help,foot_help
+site_terms,site_terms
+foot_about,foot_about
+footer_search,footer_search
+error_error,ошибка_ошибка
+SEO,SEO
+for_subscribers,для_подписчиков
+for_friends,для друзей
+for_friends_and_their_friends,для_друзей_и_их_друзей
+file_too_big,file_too_big
+bad_image_type,bad_image_type
+bad_images,плохие_изображения
+p_restored,p_restored
+IP,ИП
+Delete_selected',Удалить выбранное'
+eml_ticket_message_posted_subj,eml_ticket_message_posted_subj
+lbl_attached_files,lbl_attached_files
+lbl_delete_all_messages,lbl_delete_all_messages
+lbl_post_new_message,lbl_post_new_message
+SKU',Артикул
+Customer name,Имя Клиента
+Tracking number,Идентификационный номер
+Track order,Отследить заказ
+Tracking URL,URL отслеживания
+Chagned status will be sent to customer,Измененный статус будет отправлен клиенту
+No Roles defined,Роли не определены
+Permissions,Разрешения
+Root admin,Корневой администратор
+Export selected,Экспортировать выбранное
+Clone product,Клонировать продукт
+View product,Посмотреть продукт
+Priority,Приоритет
+No reviews yet. Be first.,Пока нет отзывов. Будь первым.
+You may also like,Вам также может понравиться
+CVV,CVV
+Drop files here to upload.<br /><br />Or click to select,"Перетащите сюда файлы для загрузки.<br /><br />Или нажмите, чтобы выбрать"
+CDek,CDek
+Company details,Сведения о компании
+Company name,Название компании
+Store URL,URL-адрес магазина
+Company slogan,Слоган компании
+Year when the store started its operation,Год начала работы магазина
+Company contacts,Контакты компании
+Company phone,Телефон компании
+International phone,Международный телефон
+Company fax,Факс компании
+Company location address,Адрес местонахождения компании
+Company address,Адрес компании
+Company city,Город компании
+Company state,Состояние компании
+Company zip/postal code,Почтовый индекс компании
+Company country,Страна компании
+Company emails,Электронная почта компании
+Site administrator email address,Адрес электронной почты администратора сайта
+Users department email address,Адрес электронной почты отдела пользователей
+Orders department email address,Адрес электронной почты отдела заказов
+Help/Support department email address,Адрес электронной почты отдела помощи/поддержки
+"Company ""From"" email","Электронная почта компании ""От"""
+"""From"" email address",Адрес электронной почты «От»
+Common store options,Распространенные варианты магазина
+Close your shop temporarily,Временно закройте свой магазин
+"The secret key to access a closed customers front end (alphanumeric characters only, 6 symbols min)","Секретный ключ для доступа к закрытому интерфейсу клиента (только буквенно-цифровые символы, минимум 6 символов)"
+Currency symbol,Символ валюты
+Weight symbol,Символ веса
+Recaptcha key,Ключ рекапчи
+Recaptcha Secret key,Рекапча Секретный ключ
+Currency API key,Ключ API валюты
+Default customer options,Опции клиента по умолчанию
+Default country,Страна по умолчанию
+Default zip code,Почтовый индекс по умолчанию
+Default state,Состояние по умолчанию
+Default city,Город по умолчанию
+Purchase limitations,Ограничения покупки
+Minimum allowed order subtotal,Минимально допустимая промежуточная сумма заказа
+Maximum allowed order subtotal (0 means no maximum limit),Максимально допустимая промежуточная сумма заказа (0 означает отсутствие максимального ограничения)
+Maximum allowed total quantity of products in an order (0 means no maximum limit),Максимально допустимое общее количество товаров в заказе (0 означает отсутствие максимального ограничения)
+Display offline methods,Отобразить офлайн-методы

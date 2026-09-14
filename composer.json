@@ -1,0 +1,8 @@
+{
+    "require": {
+        "sanmai/cdek-sdk": "^0.7.7",
+        "dvdoug/boxpacker": "^3.12",
+        "dompdf/dompdf": "^2.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

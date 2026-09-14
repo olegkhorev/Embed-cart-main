@@ -1,0 +1,83 @@
+Label,Translation
+URL,URL
+SKU,SKU
+Alt,Alt
+drop_files_to_upload,drop_files_to_upload
+foot_advertising,foot_advertising
+foot_help,foot_help
+site_terms,site_terms
+foot_about,foot_about
+footer_search,footer_search
+error_error,error_error
+SEO,SEO
+for_subscribers,for_subscribers
+for_friends,for_friends
+for_friends_and_their_friends,for_friends_and_their_friends
+file_too_big,file_too_big
+bad_image_type,bad_image_type
+bad_images,bad_images
+p_restored,p_restored
+IP,IP
+Delete_selected',Delete_selected'
+eml_ticket_message_posted_subj,eml_ticket_message_posted_subj
+lbl_attached_files,lbl_attached_files
+lbl_delete_all_messages,lbl_delete_all_messages
+lbl_post_new_message,lbl_post_new_message
+SKU',SKU'
+"Customer name","Customer name"
+"Tracking number","Tracking number"
+"Track order","Track order"
+"Tracking URL","Tracking URL"
+"Chagned status will be sent to customer","Chagned status will be sent to customer"
+"No Roles defined","No Roles defined"
+Permissions,Permissions
+"Root admin","Root admin"
+"Export selected","Export selected"
+"Clone product","Clone product"
+"View product","View product"
+Priority,Priority
+"No reviews yet. Be first.","No reviews yet. Be first."
+"You may also like","You may also like"
+CVV,CVV
+"Drop files here to upload.<br /><br />Or click to select","Drop files here to upload.<br /><br />Or click to select"
+CDek,CDek
+"Company details","Company details"
+"Company name","Company name"
+"Store URL","Store URL"
+"Company slogan","Company slogan"
+"Year when the store started its operation","Year when the store started its operation"
+"Company contacts","Company contacts"
+"Company phone","Company phone"
+"International phone","International phone"
+"Company fax","Company fax"
+"Company location address","Company location address"
+"Company address","Company address"
+"Company city","Company city"
+"Company state","Company state"
+"Company zip/postal code","Company zip/postal code"
+"Company country","Company country"
+"Company emails","Company emails"
+"Site administrator email address","Site administrator email address"
+"Users department email address","Users department email address"
+"Orders department email address","Orders department email address"
+"Help/Support department email address","Help/Support department email address"
+"Company ""From"" email","Company ""From"" email"
+"""From"" email address","""From"" email address"
+"Common store options","Common store options"
+"Close your shop temporarily","Close your shop temporarily"
+"The secret key to access a closed customers front end (alphanumeric characters only, 6 symbols min)","The secret key to access a closed customers front end (alphanumeric characters only, 6 symbols min)"
+"Currency symbol","Currency symbol"
+"Weight symbol","Weight symbol"
+"Recaptcha key","Recaptcha key"
+"Recaptcha Secret key","Recaptcha Secret key"
+"Currency API key","Currency API key"
+"Default customer options","Default customer options"
+"Default country","Default country"
+"Default zip code","Default zip code"
+"Default state","Default state"
+"Default city","Default city"
+"Purchase limitations","Purchase limitations"
+"Minimum allowed order subtotal","Minimum allowed order subtotal"
+"Maximum allowed order subtotal (0 means no maximum limit)","Maximum allowed order subtotal (0 means no maximum limit)"
+"Maximum allowed total quantity of products in an order (0 means no maximum limit)","Maximum allowed total quantity of products in an order (0 means no maximum limit)"
+"Display offline methods","Display offline methods"

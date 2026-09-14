@@ -1,0 +1,146 @@
+(function($) {
+
+"use strict";
+
+	$ec(document).ready(function() {
+
+		tabs_clicks();
+
+	});
+
+})($);
+
+
+
+var containerWidths = [],
+	scrollWidth0,
+	scroll_size = 276,
+	duration = 600,
+	defaultContainerWidth = 1600,
+	scrollWidthToContainerWidthRatio = 1;
+
+
+function initCarousels() {
+	for (var i = 0; i < 6; i++) {
+		containerWidths[containerWidths.length] = 0;
+		if ($ec('#carousel-'+i).size()) {
+			containerWidths[i] = $ec('#carousel-'+i+' .ec_res-item').size() * scroll_size;
+			var width_2 = $ec('#carousel-'+i+' .ec_res-item').size() * scroll_size;
+			$ec('#carousel-'+i+' .responsive-columns').width(width_2).css('min-width', width_2+'px');
+			var width = $ec('#carousel-'+i+' .ec_content-pr').outerWidth() + 20;
+			if (width <= containerWidths[i]) {
+				$ec('#carousel-'+i).find('.controls > .ec_button-right').css('display', 'block').css('left', (containerWidths[i]-52)+'px');
+			} else {
+				if (parseInt($ec('#carousel-'+i+' .ec_content-pr').css('left')) < 0) {
+					$ec('#carousel-'+i+' .ec_content-pr').animate({
+						left: 0
+					}, 100);
+				}
+
+				$ec('#carousel-'+i).find('.controls > .ec_button-left').css('display', 'none');
+				$ec('#carousel-'+i).find('.controls > .ec_button-right').css('display', 'none');
+			}
+
+			$ec('#carousel-'+i+' .controls > .ec_button-right').unbind('click').on('click', function() {
+				var that = $ec(this);
+				var button_cLeft = that.siblings();
+				var scrollContent = that.closest('.carousel-pr').find('.ec_content-pr');
+				var width = 0;
+
+				scrollContent.find('.ec_res-item').each(function(){
+				  width += $ec(this).outerWidth();
+				  width += parseInt($ec(this).css('margin-left'));
+				  width += parseInt($ec(this).css('margin-right'));
+				  width += parseInt($ec(this).css('padding-left'));
+				  width += parseInt($ec(this).css('padding-right'));
+				})
+
+				width = scrollContent.find('.ec_res-item').size() * scroll_size;
+				var width_2 = $ec('.ec_carousel-wrapper').outerWidth();
+				if ($ec(window).width() < 600)
+					var width_2 = scroll_size;
+				else
+					var width_2 = $ec('.ec_carousel-wrapper').outerWidth();
+
+				var maxScrollWidth = Math.floor(width - width_2);
+
+				var left = parseInt(scrollContent.css('left'));
+
+				var isEnd = false;
+
+				scrollWidth0 = Math.floor(width_2 * scrollWidthToContainerWidthRatio);
+				if (Math.abs(left - scrollWidth0) >= maxScrollWidth) {
+					scrollWidth0 = maxScrollWidth + left;
+					isEnd = true;
+				}
+
+				scrollContent.animate({
+					left: left - scrollWidth0
+				}, duration, function() {
+					button_cLeft.fadeIn(duration);
+
+					if (isEnd) {
+						that.fadeOut(duration);
+					}
+				});
+			});
+
+  			$ec('#carousel-'+i+' .controls > .ec_button-left').unbind('click').on('click', function() {
+				var that = $ec(this);
+				var button_cRight = that.siblings();
+				var scrollContent = that.closest('.carousel-pr').find('.ec_content-pr');
+
+				// Get current scroll position
+				var left = parseInt(scrollContent.css('left'));
+
+				var isEnd = false;
+
+				// Determine scrollWidth
+				if ($ec(window).width() < 600)
+					var width_2 = scroll_size;
+				else
+					var width_2 = $ec('.ec_carousel-wrapper').outerWidth();
+
+				scrollWidth0 = Math.floor(width_2 * scrollWidthToContainerWidthRatio);
+				if (left + scrollWidth0 >= 0) {
+					isEnd = true;
+				}
+
+				scrollContent.animate({
+					left: isEnd ? 0 : left + scrollWidth0
+				}, duration, function() {
+					// Display left button_c
+					button_cRight.fadeIn(duration);
+
+					// Determine if we've reached the end
+					if (isEnd) {
+						// Hide right button_c
+						that.fadeOut(duration);
+					}
+				});
+			});
+		}
+	}
+}
+
+$ec(window).resize(function() {
+	initCarousels();
+});
+
+function tabs_clicks() {
+	initCarousels();
+	$ec('.ec_home-tabs li').on('click', function() {
+		return false;
+		$ec('.ec_home-tabs li').removeClass('active');
+		$ec(this).addClass('active');
+		$ec('.tab-content').addClass('hidden');
+		$ec('#tab-'+$ec(this).data('tab')).removeClass('hidden');
+	});
+
+	$ec('.ec_product-tabs li').on('click', function() {
+		$ec('.ec_product-tabs li').removeClass('active');
+		$ec(this).addClass('active');
+		$ec('.tab-content').addClass('hidden');
+		$ec('#tab-'+$ec(this).data('tab')).removeClass('hidden');
+	});
+}
