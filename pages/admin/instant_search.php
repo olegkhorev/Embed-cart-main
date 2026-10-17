@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($_GET['q']) {
 	$_SESSION['substring'] = $substring = $q = addslashes($_GET['q']);
 }

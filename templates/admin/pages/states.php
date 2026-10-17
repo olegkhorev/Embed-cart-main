@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <form action="{$current_location}/admin/countries/<?php echo $country['code']; ?>" method="post" name="states_form">
 <input type="hidden" name="mode" value="" />
 

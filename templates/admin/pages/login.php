@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <h1>{lng[Please, login to use the admin area]}</h1>
 
 <form name="login" method="POST" action="{$current_location}/admin/login" class="noajax">

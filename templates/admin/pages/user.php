@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <a href="{$current_location}/admin/user/new">{lng[Create new user account]}</a><br /><br />
 <form method="post" name="user_form"{*{if !$user['id']} class="noajax"{/if}*}>
 <table cellpadding="2" class="user_table normal-table">

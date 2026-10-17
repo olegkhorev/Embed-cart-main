@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="responsive-columns products"{if $tag_id} id="{$tag_id}"{/if}>
 {foreach $products as $v}
 <div class="ec_res-item">

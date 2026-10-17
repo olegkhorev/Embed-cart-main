@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 extract($_POST);
 extract($_GET);
 $zoneid = $get['2'];

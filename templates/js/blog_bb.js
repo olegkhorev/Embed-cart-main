@@ -1,3 +1,10 @@
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
 var helptext = [];
 helptext['b'] = "{lng[blog_bbcode_b]}";
 helptext['i'] = "{lng[blog_bbcode_i]}";

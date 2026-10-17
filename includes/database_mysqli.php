@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 class Database {
 	public function connect() {
 		global $sql_server, $sql_user, $sql_password, $sql_database, $sql_port;

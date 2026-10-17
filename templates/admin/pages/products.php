@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if (!isset($_GET['direction']) || $_GET['direction'])
 	$direction = "&direction=0";
 else

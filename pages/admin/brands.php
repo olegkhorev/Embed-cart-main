@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($_GET['mode'] == 'delete_image') {
 	$image = $db->row("SELECT * FROM brand_images WHERE brandid='".$get['2']."'");
 	$dir = SITE_ROOT . '/photos/brand/'.$get['2'].'/'.$image['imageid'];

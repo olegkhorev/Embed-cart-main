@@ -1,3 +1,10 @@
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
 function popup_product() {
 	aload();
 	$ec.ajax({url: current_location+'/admin/popup_product/'}).done(function(r) {

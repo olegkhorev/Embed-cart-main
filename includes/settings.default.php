@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
 # LOCAL VERSION FOR DEVELOPMENT TO KEEP SAME SETTINGS FILE
 	# It recreate cached files on every call

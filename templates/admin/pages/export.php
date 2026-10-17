@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <form action="{$current_location}/admin/export{if $_GET['product']}?product={$_GET['product']}{/if}" method="post" accept-charset="utf-8" class="list-form noajax" name="exportForm">
 
 {if $_GET['product']}

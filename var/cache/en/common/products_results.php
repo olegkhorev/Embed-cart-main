@@ -1,3 +1,12 @@
+<?php 
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <table class="products-nav">
 <tr>
 <?php if ($total_pages > 2) {?>

@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 $max_input_vars = ini_get('max_input_vars');
 if (empty($max_input_vars)) {
     $max_input_vars = 1000;

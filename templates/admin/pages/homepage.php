@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <?php if (empty($_GET['parentid'])) { ?>
 <ul class="admin-tabs">
 <li<?php if (empty($get['2'])) echo ' class="active"'; ?>><a href="{$current_location}/admin/homepage">{lng[Details]}</a></li>

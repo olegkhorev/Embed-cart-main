@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="tabs">
 <a href="{$parnet_site_page}#!profile" class="ec_ajax_link {if $section != 'orders'} active{/if}">{lng[Your profile]}</a>
 <a href="{$parnet_site_page}#!profile/orders" class="ec_ajax_link {if $section == 'orders'} active{/if}">{lng[Orders history]}</a>

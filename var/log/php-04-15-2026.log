@@ -1,0 +1,184 @@
+20:28:30 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:187
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/qx6dmd4g8tbq8gfg/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/qx6dmd4g8tbq8gfg/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/qx6dmd4g8tbq8gfg/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 187
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:36:39 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:187
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 187
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:43:31 15.4.26: Fatal Error: Uncaught Error: Class "Braintree_Configuration" not found in D:\OSNew\home\ec.com\cart\pages\checkout.php:21
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\index.php(211): include()
+#1 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\pages\checkout.php. Line: 21
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:47:58 15.4.26: Fatal Error: Uncaught Braintree\Exception\Configuration: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Configuration.php:318
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(24): Braintree\Configuration->assertHasAccessTokenOrKeys()
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Gateway.php(65): Braintree\ClientTokenGateway->__construct(Object(Braintree\Gateway))
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(23): Braintree\Gateway->clientToken()
+#3 D:\OSNew\home\ec.com\cart\pages\checkout.php(45): Braintree\ClientToken::generate()
+#4 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#5 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Configuration.php. Line: 318
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:52:26 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:189
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(116): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 189
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:55:43 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:189
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(116): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 189
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:56:18 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:189
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(116): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 189
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+20:58:09 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:189
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(116): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(35): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 189
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+21:02:09 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:188
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(36): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 188
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+21:05:46 15.4.26: Fatal Error: Uncaught Braintree\Exception\SSLCertificate: SSL certificate problem: unable to get local issuer certificate in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:188
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(37): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 188
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+21:07:46 15.4.26: Fatal Error: Uncaught Error: Undefined constant "Braintree\BT_SSL2" in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:144
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(29): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 144
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+
+21:08:02 15.4.26: Fatal Error: Uncaught Error: Undefined constant "Braintree\BT_SSL2" in D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php:144
+Stack trace:
+#0 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(114): Braintree\Http->_doUrlRequest('POST', 'https://api.sandbox.braintreegateway.com:443/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n', NULL)
+#1 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php(45): Braintree\Http->_doRequest('POST', '/merchants/h37htrb89y3cpgbf/client_token', '<?xml version="1.0" encoding="UTF-8"?>\n<client_token>\n <version type="integer">2</version>\n</client_token>\n')
+#2 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(61): Braintree\Http->post('/merchants/h37htrb89y3cpgbf/client_token', Array)
+#3 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientTokenGateway.php(47): Braintree\ClientTokenGateway->_doGenerate('/client_token', Array)
+#4 D:\OSNew\home\ec.com\cart\bt\lib\Braintree\ClientToken.php(18): Braintree\ClientTokenGateway->generate(Array)
+#5 D:\OSNew\home\ec.com\cart\pages\checkout.php(29): Braintree\ClientToken::generate()
+#6 D:\OSNew\home\ec.com\cart\index.php(211): include('D:\\OSNew\\home\\ec.com\\cart\\pages\\checkout.php')
+#7 {main}
+  thrown. File: D:\OSNew\home\ec.com\cart\bt\lib\Braintree\Http.php. Line: 144
+
+REQUEST_URI: /cart/checkout?&original=1&its_ajax_page=1
+
+---
+

@@ -1,3 +1,10 @@
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
 var current_banner = 1,	banners_count, banners_delay = 5000, banners_interval;
 
 /*

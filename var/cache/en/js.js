@@ -37,7 +37,21 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
  *  jquery.ui.widget.js
  *  jquery.ui.mouse.js
  */
-!function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);var $ec = jQuery,
+!function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+var $ec = jQuery,
 	ec_auto_click = false,
 	$window = $ec(window),
 	original_content,
@@ -1551,7 +1565,21 @@ function translate_alert(message, nook, h, classes, noshake, alert2, nofade) {
 	alerts += 1;
 
 	return id;
-}var current_banner = 1,	banners_count, banners_delay = 5000, banners_interval;
+}/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+var current_banner = 1,	banners_count, banners_delay = 5000, banners_interval;
 
 
 
@@ -2430,7 +2458,21 @@ $ec(document).ready(function() {
 
 	banners();
 
-});(function($) {
+});/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+(function($) {
 
 "use strict";
 
@@ -2575,7 +2617,35 @@ function tabs_clicks() {
 		$ec('.tab-content').addClass('hidden');
 		$ec('#tab-'+$ec(this).data('tab')).removeClass('hidden');
 	});
-}var put_filter_push = '';
+}/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+var put_filter_push = '';
 (function($) {
 "use strict";
   $ec(document).ready(function() {
@@ -2926,13 +2996,41 @@ function left_filter_max_height() {
 
     $('.withleftec_menu .left_filter').css('max-height', max_height+'px');
   }
-}/*!Zoom v1.7.11 - 2013-11-12	Enlarge images on click or mouseover.	(c) 2013 Jack Moore - http://www.jacklmoore.com/zoom	license: http://www.opensource.org/licenses/mit-license.php*//*!
+}/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+/*!Zoom v1.7.11 - 2013-11-12	Enlarge images on click or mouseover.	(c) 2013 Jack Moore - http://www.jacklmoore.com/zoom	license: http://www.opensource.org/licenses/mit-license.php*//*!
 	Zoom v1.7.11 - 2013-11-12
 	Enlarge images on click or mouseover.
 	(c) 2013 Jack Moore - http://www.jacklmoore.com/ec_zoom
 	license: http://www.opensource.org/licenses/mit-license.php
 */
-(function(o){var t={url:!1,callback:!1,target:!1,duration:120,on:"mouseover",touch:!0,onZoomIn:!1,onZoomOut:!1,magnify:1};o.ec_zoom=function(t,n,e,i){var u,c,a,m,r,l,s,f=o(t).css("position");return o(t).css({position:/(absolute|fixed)/.test(f)?f:"relative",overflow:"hidden"}),e.style.width=e.style.height="",o(e).addClass("ec_zoomImg").css({position:"absolute",top:0,left:0,opacity:0,width:e.width*i,height:e.height*i,border:"none",maxWidth:"none"}).appendTo(t),{init:function(){c=o(t).outerWidth(),u=o(t).outerHeight(),n===t?(m=c,a=u):(m=o(n).outerWidth(),a=o(n).outerHeight()),r=(e.width-c)/m,l=(e.height-u)/a,s=o(n).offset()},move:function(o){var t=o.pageX-s.left,n=o.pageY-s.top;n=Math.max(Math.min(n,a),0),t=Math.max(Math.min(t,m),0),e.style.left=t*-r+"px",e.style.top=n*-l+"px"}}},o.fn.ec_zoom=function(n){return this.each(function(){var e,i=o.extend({},t,n||{}),u=i.target||this,c=this,a=document.createElement("img"),m=o(a),r="mousemove.ec_zoom",l=!1,s=!1;(i.url||(e=o(c).find("img"),e[0]&&(i.url=e.data("src")||e.attr("src")),i.url))&&(a.onload=function(){function t(t){e.init(),e.move(t),m.stop().fadeTo(o.support.opacity?i.duration:0,1,o.isFunction(i.onZoomIn)?i.onZoomIn.call(a):!1)}function n(){m.stop().fadeTo(i.duration,0,o.isFunction(i.onZoomOut)?i.onZoomOut.call(a):!1)}var e=o.ec_zoom(u,c,a,i.magnify);"grab"===i.on?o(c).on("mousedown.ec_zoom",function(i){1===i.which&&(o(document).one("mouseup.ec_zoom",function(){n(),o(document).off(r,e.move)}),t(i),o(document).on(r,e.move),i.preventDefault())}):"click"===i.on?o(c).on("click.ec_zoom",function(i){return l?void 0:(l=!0,t(i),o(document).on(r,e.move),o(document).one("click.ec_zoom",function(){n(),l=!1,o(document).off(r,e.move)}),!1)}):"toggle"===i.on?o(c).on("click.ec_zoom",function(o){l?n():t(o),l=!l}):"mouseover"===i.on&&(e.init(),o(c).on("mouseenter.ec_zoom",t).on("mouseleave.ec_zoom",n).on(r,e.move)),i.touch&&o(c).on("touchstart.ec_zoom",function(o){o.preventDefault(),s?(s=!1,n()):(s=!0,t(o.originalEvent.touches[0]||o.originalEvent.changedTouches[0]))}).on("touchmove.ec_zoom",function(o){o.preventDefault(),e.move(o.originalEvent.touches[0]||o.originalEvent.changedTouches[0])}),o.isFunction(i.callback)&&i.callback.call(a)},a.src=i.url,o(c).one("ec_zoom.destroy",function(){o(c).off(".ec_zoom"),m.remove()}))})},o.fn.ec_zoom.defaults=t})(window.jQuery);var rate_clicked = 0,
+(function(o){var t={url:!1,callback:!1,target:!1,duration:120,on:"mouseover",touch:!0,onZoomIn:!1,onZoomOut:!1,magnify:1};o.ec_zoom=function(t,n,e,i){var u,c,a,m,r,l,s,f=o(t).css("position");return o(t).css({position:/(absolute|fixed)/.test(f)?f:"relative",overflow:"hidden"}),e.style.width=e.style.height="",o(e).addClass("ec_zoomImg").css({position:"absolute",top:0,left:0,opacity:0,width:e.width*i,height:e.height*i,border:"none",maxWidth:"none"}).appendTo(t),{init:function(){c=o(t).outerWidth(),u=o(t).outerHeight(),n===t?(m=c,a=u):(m=o(n).outerWidth(),a=o(n).outerHeight()),r=(e.width-c)/m,l=(e.height-u)/a,s=o(n).offset()},move:function(o){var t=o.pageX-s.left,n=o.pageY-s.top;n=Math.max(Math.min(n,a),0),t=Math.max(Math.min(t,m),0),e.style.left=t*-r+"px",e.style.top=n*-l+"px"}}},o.fn.ec_zoom=function(n){return this.each(function(){var e,i=o.extend({},t,n||{}),u=i.target||this,c=this,a=document.createElement("img"),m=o(a),r="mousemove.ec_zoom",l=!1,s=!1;(i.url||(e=o(c).find("img"),e[0]&&(i.url=e.data("src")||e.attr("src")),i.url))&&(a.onload=function(){function t(t){e.init(),e.move(t),m.stop().fadeTo(o.support.opacity?i.duration:0,1,o.isFunction(i.onZoomIn)?i.onZoomIn.call(a):!1)}function n(){m.stop().fadeTo(i.duration,0,o.isFunction(i.onZoomOut)?i.onZoomOut.call(a):!1)}var e=o.ec_zoom(u,c,a,i.magnify);"grab"===i.on?o(c).on("mousedown.ec_zoom",function(i){1===i.which&&(o(document).one("mouseup.ec_zoom",function(){n(),o(document).off(r,e.move)}),t(i),o(document).on(r,e.move),i.preventDefault())}):"click"===i.on?o(c).on("click.ec_zoom",function(i){return l?void 0:(l=!0,t(i),o(document).on(r,e.move),o(document).one("click.ec_zoom",function(){n(),l=!1,o(document).off(r,e.move)}),!1)}):"toggle"===i.on?o(c).on("click.ec_zoom",function(o){l?n():t(o),l=!l}):"mouseover"===i.on&&(e.init(),o(c).on("mouseenter.ec_zoom",t).on("mouseleave.ec_zoom",n).on(r,e.move)),i.touch&&o(c).on("touchstart.ec_zoom",function(o){o.preventDefault(),s?(s=!1,n()):(s=!0,t(o.originalEvent.touches[0]||o.originalEvent.changedTouches[0]))}).on("touchmove.ec_zoom",function(o){o.preventDefault(),e.move(o.originalEvent.touches[0]||o.originalEvent.changedTouches[0])}),o.isFunction(i.callback)&&i.callback.call(a)},a.src=i.url,o(c).one("ec_zoom.destroy",function(){o(c).off(".ec_zoom"),m.remove()}))})},o.fn.ec_zoom.defaults=t})(window.jQuery);/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+var rate_clicked = 0,
 	gst_applied = false,
 	qty_clicked = false,
 	clear_clicked = false,
@@ -4672,7 +4770,35 @@ function recaptchaOnload() {
 		} catch (err) {
 		}
 	}
-}var register_form = [];
+}/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+var register_form = [];
 
 register_form['firstname'] = "Firstname";
 
@@ -4713,7 +4839,21 @@ register_form['phone'] = "Phone";
 
   });
 
-})($);(function($) {
+})($);/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
+(function($) {
 "use strict";
   $ec(document).ready(function() {
     ec_states_actions();

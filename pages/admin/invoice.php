@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 q_load('order', 'product');
 if ($_POST['tracking'] || $_POST['tracking_url']) {
 	$db->query("UPDATE orders SET tracking='".addslashes($_POST['tracking'])."', tracking_url='".addslashes($_POST['tracking_url'])."' WHERE orderid='".addslashes($get['2'])."'");

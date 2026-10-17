@@ -1,3 +1,10 @@
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
 var current_multirow = 0;
 function duplicate_row(r, e) {	if (e.html() == '+') {		var h = r.html().split("[0]").join("["+(current_multirow+1)+"]");
 		r.parent().append('<tr id="tmp_row">'+h+'</tr>');

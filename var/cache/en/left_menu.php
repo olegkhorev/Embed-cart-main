@@ -1,3 +1,12 @@
+<?php 
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div id="left_ec_menu">
 <div class="mobile-ec_menu-links">
 <a href="<?php echo $parnet_site_page;?>#!" class="ec_ajax_link">home</a>

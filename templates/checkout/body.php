@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="checkout-container">
 <h1><a href="{$parnet_site_page}#!cart" class="ec_ajax_link back-to-cart"><img src="{$current_location}/images/back_arrow.png" alt="" /></a>{lng[Checkout]}</h1>
 

@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {if $v['gift_card']}
 <b>{lng[Gift Card]}</b><br />
 {lng[You will see the Gift Card key phrase on paid invoice]}

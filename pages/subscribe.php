@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 extract($_GET);
 if ($db->field("SELECT COUNT(*) FROM subscribers WHERE email='".addslashes($email)."'")) {
 	exit(lng('You are already subscribed'));

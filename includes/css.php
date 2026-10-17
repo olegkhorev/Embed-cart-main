@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 $dir = SITE_ROOT.'/var/cache/other/css';
 global $web_dir;
 foreach ($css as $v) {

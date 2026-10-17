@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <form method="post" name="roleform">
 <input type="hidden" name="mode" value="{if $role}save{else}add{/if}" />
 <?php

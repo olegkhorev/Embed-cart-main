@@ -1,3 +1,17 @@
+/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
 var rate_clicked = 0,
 	gst_applied = false,
 	qty_clicked = false,

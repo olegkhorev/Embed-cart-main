@@ -1,3 +1,12 @@
+<?php 
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="minicart-icon"><img src="<?php echo $current_location;?>/images/cart.png" alt="" /></div>
 <?php if ($cart['products']) {?>
 <div class="full-cart-label">

@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <h1>{lng[Set your password]}</h1><br />
 <form method="POST" name="cpform">
 <div class="logsec cpsec">

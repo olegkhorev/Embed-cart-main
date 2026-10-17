@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <h1 class="ec_cart-h1">{lng[Your cart]}</h1>
 {if $products}
 <form action="{$current_location}/cart" id="cartform" method="POST">

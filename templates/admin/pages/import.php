@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <form method="post" accept-charset="utf-8" class="list-form noajax" name="exportForm" enctype="multipart/form-data">
 <br />
 <table width="800" class="import" cellspacing="1" cellpadding="2">

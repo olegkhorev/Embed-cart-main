@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 q_load('cart', 'product', 'order');
 
 require_once(SITE_ROOT."/bt/lib/autoload.php");

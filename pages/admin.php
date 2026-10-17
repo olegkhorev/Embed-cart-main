@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($userinfo['usertype'] != 'A' && $get['1'] != 'login') {
 	$_SESSION['login_redirect'] = $_SERVER['REQUEST_URI'];
 	redirect('admin/login');

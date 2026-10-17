@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {if $total_pages > 2}
 <div class="navigation">
 <span class="navigation-title">{lng[Pages]}:</span>

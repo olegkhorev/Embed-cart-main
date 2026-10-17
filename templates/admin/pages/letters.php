@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <a href="<?php echo $current_location; ?>/admin/subscribtions/<?php echo $get['2']; ?>/new">{lng[Add new]}</a>
 <br /><br />
 {lng[Total subscribers]}: <?php echo $subscribers ? $subscribers : '0';?> <a href="{$current_location}/admin/subscribtions/<?php echo $get['2']; ?>/export">{lng[Export]}</a>

@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <table class="db-stats-1" cellspacing="30">
 <tr>
 <td class="ec_ajax_link td-1" href='{$current_location}/admin/products'><span>{$products}</span><h2>{lng[Products]}</h2></td>

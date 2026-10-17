@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($_GET['translate_mode']) {
 	$_SESSION['translate_mode'] = 1;
 	redirect('/admin/language');

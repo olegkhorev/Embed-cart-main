@@ -2,7 +2,7 @@
 @ini_set('log_errors','On');
 @ini_set('display_errors','Off');
 extract($_GET);
-if (php_sapi_name() != 'cli' && $pswd != 'embed_01230') {
+if (php_sapi_name() != 'cli' && $pswd != '01230') {
 	header("Location: /");
 	exit;
 }

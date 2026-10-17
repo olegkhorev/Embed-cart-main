@@ -1,3 +1,10 @@
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
 function quote_comment(id, name) {
 	var text = document.getElementById('comment_'+id).innerHTML;
 

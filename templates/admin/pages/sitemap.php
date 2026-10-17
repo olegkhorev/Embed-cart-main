@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <h1>{lng[Google sitemap]}</h1>
 Register in Google webmaster and submit .txt and .xml file there.<br /><br />
 You can submit sitemap to other search engines too.<br /><br />

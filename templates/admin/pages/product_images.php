@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="drag">
 <center><div class="pbar"><img src="{$current_location}/images/spacer.gif" /></div></center>
 <form name="upload" method="POST" enctype='multipart/form-data' class="noajax">

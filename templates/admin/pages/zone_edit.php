@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <h1>{lng[Zone details]}</h1>
 
 <form method="post" name="zoneform" onsubmit="javascript: if (this.zone_name.value == '') { ec_alert('{lng[Zone name must be entered]}'); return false; } else return saveSelects(new Array('zone_countries','zone_ec_states'));"{*{if !$zone['zoneid']} class="noajax"{/if}*}>

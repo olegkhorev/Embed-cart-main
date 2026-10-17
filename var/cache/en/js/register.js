@@ -1,3 +1,17 @@
+/**
+
+* Embed-Cart
+
+* Copyright (c) Oleg Khorev
+
+*
+
+* Released under the MIT License.
+
+* https://github.com/olegkhorev/Embed-cart-main
+
+*/
+
 var register_form = [];
 
 register_form['firstname'] = "Firstname";

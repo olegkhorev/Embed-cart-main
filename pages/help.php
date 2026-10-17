@@ -1,4 +1,13 @@
 <?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
+<?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$rc_key = $config['General']['recaptcha_key'];
 	$rc_skey = $config['General']['recaptcha_skey'];

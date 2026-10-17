@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {if $translate_mode}
 <a href="{$current_location}/admin/language?exit_translate_mode=1" class="mdl-button">{lng[Exit "Translate" mode]}</a>
 {else}

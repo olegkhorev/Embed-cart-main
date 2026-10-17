@@ -1,1 +1,1 @@
-Embed-Cart 1.1.1
+Embed-Cart 1.2.0

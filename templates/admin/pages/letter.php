@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {lng[Total subscribers]}: <?php echo $subscribers ? $subscribers : '0';?> <a href="{$current_location}/admin/subscribtions/export">{lng[Export]}</a>
 <br /><br />
 <script src="<?php echo $current_location; ?>/ckeditor/ckeditor.js"></script>

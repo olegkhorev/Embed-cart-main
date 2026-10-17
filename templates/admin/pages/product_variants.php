@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <form method="POST" name="vform">
 <input type="hidden" name="section" value="variants">
 <input type="hidden" name="mode" value="update">

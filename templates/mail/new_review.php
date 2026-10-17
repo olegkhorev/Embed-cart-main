@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {include="mail/ec_header.php"}
 {lng[Hello]},<br /><br />
 <p>{$name} {lng[posted new review]}</p>

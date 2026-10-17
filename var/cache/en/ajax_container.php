@@ -1,3 +1,12 @@
+<?php 
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 <div class="ec_page-container<?php if ($banners) {?> withbanners<?php } ?><?php if (($get['0'] == 'brands' && $get['1']) || $get['0'] == 'search' || $get['0'] == 'category') {?> ec_catalog-margin<?php } ?>">
 <div class="withleftec_menu">
 <div class="left_filter">

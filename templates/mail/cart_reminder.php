@@ -1,3 +1,12 @@
+<?php
+/**
+* Embed-Cart
+* Copyright (c) Oleg Khorev
+*
+* Released under the MIT License.
+* https://github.com/olegkhorev/Embed-cart-main
+*/
+?>
 {include="mail/ec_header.php"}
 {lng[Hello]}{if $user['firstname']} {$user['firstname']}{/if},<br /><br />
 <p>{lng[Recently you left products in your cart on our site]} <a href="{$current_location}?{$link_add}">{$config['Company']['company_name']}</a>.</p>
