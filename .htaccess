@@ -2,15 +2,23 @@ Options -Indexes
 DirectoryIndex index.php
 ErrorDocument 404 /index.php
 
+# Option for clean URLs
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+# 1. Drop connection immediately for missing images
+RewriteCond %{REQUEST_URI} \.(jpe?g|png|gif|webp|svg|ico)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ - [F,L]
+
+# 2. Existing router: Send all other missing files/folders to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.*)$ index.php [L]
 </IfModule>
 
-# compress text, html, javascript, css, xml:
+# Compress text, html, javascript, css, xml:
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -25,7 +33,6 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javasc
 </IfModule>
 
 <IfModule mod_expires.c>
-
   # Expire images/js/css header
   ExpiresActive On
   ExpiresDefault A0
@@ -42,17 +49,4 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javasc
   ExpiresByType text/css A31104000
   ExpiresByType text/javascript A31104000
   ExpiresByType application/javascript A31104000
-
 </IfModule>
-
-<IfModule mod_headers.c>
-#  Header set Access-Control-Allow-Origin "https://ec2.com"
-#Header set Access-Control-Allow-Origin "https://ec2.com"
-Header set Access-Control-Allow-Headers "Cache-Control,Pragma,Content-Type,X-GWT-Module-Base,X-GWT-Permutation,X-Ecwid-Xsrf-Token,X-Ecwid-Device-Measurement"
-Header set Access-Control-Max-Age "600"
-Header set Access-Control-Allow-Credentials "true"
-</IfModule>
-
-<FilesMatch "\.(svg)$">
-#  Header set Access-Control-Allow-Origin "*"
-</FilesMatch>
